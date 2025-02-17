@@ -22,3 +22,12 @@ function toggleFAQ(id) {
 }
 
 
+particlesJS("particles-js", {
+    particles: {
+      number: { value: 50 },
+      size: { value: 3 },
+      move: { speed: 2 },
+      opacity: { value: 0.5 },
+      line_linked: { enable: true, opacity: 0.2 }
+    }
+  });
