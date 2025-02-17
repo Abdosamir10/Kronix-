@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kronix</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-clifford: #da373d;
+        }
+      </style>
+    <link rel="icon" href="image/logo.svg">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+</head>
+<body class="">
+   <header class="header bg-black fixed top-0 left-0 z-10 w-full  ">
+    <nav class=" mx-auto p-6 ">
+        <div class="container mx-auto flex justify-between items-center ">
+            <img src="image/logo.svg" alt="logo" class="w-16 h-8">
+            <div class="hidden md:flex space-x-6 items-center ">
+                <a href="#home" class="text-white hover:text-[#B9FD50]">Home</a>
+                <a href="#about" class="text-white hover:text-[#B9FD50]">About </a>
+                <a href="#gallery" class="text-white hover:text-[#B9FD50]">Gallery</a>
+                <a href="#services" class="text-white hover:text-[#B9FD50]">Services</a>
+                <a href="#testmonials" class="text-white hover:text-[#B9FD50]">Testimonials</a>
+                <a href="#blogs" class="text-white hover:text-[#B9FD50]">BLOGS</a>
+                <a href="#faq" class="text-white hover:text-[#B9FD50]">FAQ's</a>
+            </div>
+            <a href="#" class=" hidden md:flex py-2 px-6 rounded-lg text-gray-900 bg-[#B9FD50] hover:bg-[#90c73d]">Get Started</a>
+
+            <button id="mobile-btn" class="md:hidden">
+                <i class="bx bx-menu text-white text-3xl"></i>
+            </button>
+        </div>
+        <div class="md:hidden">
+            <div id="mobile-menu" class="absolute flex hidden flex-col items-center space-y-4 font-bold bg-[#1E2008] py-8 left-6 right-6 drop-shadow-lg border-gray-300  rounded-lg">
+               <a href="#home" class="text-white hover:text-[#B9FD50]">Home</a>
+                <a href="#about" class="text-white hover:text-[#B9FD50]">About </a>
+                <a href="#gallery" class="text-white hover:text-[#B9FD50]">Gallery</a>
+                <a href="#services" class="text-white hover:text-[#B9FD50]">Services</a>
+                <a href="#testmonials" class="text-white hover:text-[#B9FD50]">Testimonials</a>
+                <a href="#blogs" class="text-white hover:text-[#B9FD50]">BLOGS</a>
+                <a href="#faq" class="text-white hover:text-[#B9FD50]">FAQ's</a>
+                <a href="#" class="py-2 px-6 rounded-lg text-gray-900 bg-[#B9FD50] hover:bg-[#90c73d]">Get Started</a>
+            </div>
+        </div>
+      </nav>
+   </header>
+
+   <section class=" bg-black px-4 sm:px-8 lg:px-16 " id="home">
+    <div class="flex flex-col items-center justify-center space-y-8  pt-64   text-center">
+        <h1 class="text-center text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white  max-w-5xl">
+            Bringing Your <br> Dream Into <span class="text-[#B9FD50]">Reality</span>
+          </h1>
+        
+        <p class="text-base sm:text-lg md:text-2xl text-gray-700 dark:text-gray-400 max-w-2xl">
+            We increase revenue and ensure sustainable long-term growth for your business 
+            through powerful Webflow websites.
+        </p>
+        <a href="#" class="py-3 px-5 sm:py-4 sm:px-6 rounded-lg text-black bg-[#B9FD50] hover:bg-[#90c73d] transition-all">
+            Book A Meeting
+        </a>
+    </div>
+
+   
+    <div class="flex flex-col items-center justify-center space-y-4 pt-10 md:pt-24">
+        <div class="flex flex-row items-center justify-center space-x-4">
+            <hr class="w-10 sm:w-14 h-1 bg-[#B9FD50]">
+            <h4 class="text-sm sm:text-base font-semibold text-white mx-2 sm:mx-4">TRUSTED BY AMAZING BRANDS</h4>
+            <hr class="w-10 sm:w-14 h-1 bg-[#B9FD50]">
+        </div>
+
+        
+        <div class="flex flex-row items-center justify-center sm:overflow-x-auto overflow-hidden  hover:pause space-x-4 px-4 py-4 bg-[#222222] rounded-2xl w-full max-w-4xl mb-10 ">
+            <img src="image/Fictional company logo 1.svg" alt="Brand 1" class="w-20 sm:w-28 h-auto mx-2 sm:mx-5  animate-scroll ">
+            <img src="image/Fictional company logo 2.svg" alt="Brand 2" class="w-20 sm:w-28 h-auto mx-2 sm:mx-5  animate-scroll ">
+            <img src="image/Fictional company logo 3.svg" alt="Brand 3" class="w-20 sm:w-28 h-auto mx-2 sm:mx-5  animate-scroll ">
+            <img src="image/Fictional company logo 4.svg" alt="Brand 4" class="w-20 sm:w-28 h-auto mx-2 sm:mx-5  animate-scroll ">
+            <img src="image/Fictional company logo 5.svg" alt="Brand 5" class="w-20 sm:w-28 h-auto mx-2 sm:mx-5  animate-scroll ">
+            
+        </div>
+    </div>
+
+
+
+<div class=" mx-auto bg-black px-6 py-24 grid md:grid-cols-1  gap-8" id="about">
+    
+    <div class=" grid md:grid-cols-2 sm:grid-cols-1 gap-8">
+    <div class="ml-10 ">
+        <p class="text-[#A0FF5F] font-semibold text-lg">How We Work</p>
+        <h2 class="text-3xl sm:text-4xl font-bold text-white mt-2">Get a dedicated design team at a fraction of the cost.</h2>
+    </div>
+    <div>
+        <p class="text-gray-300 text-lg">
+            Grow your brand with high-quality design for a flat monthly fee. Work with senior designers.<br class="hidden md:block"> Subscribe and make as many requests as you need - no limits.
+        </p>
+        <a href="#" class=" mt-6 inline-block px-6 py-3 bg-[#A0FF5F] text-black font-semibold rounded-lg hover:bg-[#80D94F] transition">
+            See Pricing
+        </a>
+    </div>
+</div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-16 w-full max-w-5xl mx-auto">
+        <div class="flex flex-col items-center text-center">
+            <div class="bg-lime-400 p-4 rounded-full mb-5">
+                <img src="image/Mask group 1.svg" alt="Rocket icon" class="w-10">
+            </div>
+            <h3 class="text-2xl font-bold text-white">Subscribe & get started</h3>
+            <p class="text-gray-400 mt-4">Submit as many design tasks as you need without worrying about individual project fees.</p>
+        </div>
+        
+        <div class="flex flex-col items-center text-center">
+            <div class="bg-lime-400 p-4 rounded-full mb-5">
+                <img src="image/Mask group 2.svg" alt="Design icon" class="w-10">
+            </div>
+            <h3 class="text-2xl font-bold text-white">Polished designs – on time</h3>
+            <p class="text-gray-400 mt-4">Our designers get to work to deliver your request. Receive your design within a few days.</p>
+        </div>
+        
+        <div class="flex flex-col items-center text-center">
+            <div class="bg-lime-400 p-4 rounded-full mb-5">
+                <img src="image/Mask group 3.svg" alt="Revisions icon" class="w-10">
+            </div>
+            <h3 class="text-2xl font-bold text-white">Revisions made simple</h3>
+            <p class="text-gray-400 mt-4">Custom designs, prompt replies, and as many revisions as you need.</p>
+        </div>
+    </div>
+</div>
+</section>
+
+
+<section id="gallery">
+    <div class="container mx-auto px-4 py-12 text-center">
+        <h2 class="text-4xl font-bold text-gray-900">Our Beautiful Works</h2>
+        <p class="text-gray-600 mt-2">We help our clients grow their bottom-line with clean and  <br>professional websites.</p>
+        <button class="mt-4 px-6 py-2 border-2 border-gray-600 text-gray-900 rounded-md hover:bg-[#B9FD50] hover:border-[#B9FD50] hover:text-gray-900 transition">
+            <i class='bx bx-loader'></i>
+            Load More
+        </button>
+    </div>
+
+    <div class="container mx-auto px-4 mb-10">
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 ">
+            <img src="image/EDO_square_02.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 1">
+            <img src="image/EDO_square_03.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 2">
+            <img src="image/EDO_square_04.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 3">
+            <img src="image/EDO_square_05.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 4">
+            <img src="image/EDO_square_06.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 5">
+            <img src="image/EDO_square_07.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 6">
+            <img src="image/EDO_square_08.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 7">
+            <img src="image/EDO_square_09.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 8">
+            <img src="image/EDO_square_010.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 9">
+            <img src="image/EDO_square_011.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 10">
+            <img src="image/EDO_square_012.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 11">
+            <img src="image/EDO_square_013.jpg.svg" class="w-full rounded-lg shadow-md" alt="Artwork 12">
+        </div>
+
+        
+    </div>
+
+</section>
+
+
+
+    <section class="bg-black text-white" id="services">
+        <div class=" container mx-auto  px-6 py-16 text-center">
+            <p class="text-[#A0FF5F] text-sm font-semibold">OUR CAPABILITIES</p>
+            <h2 class="text-4xl font-bold mt-2">We can help you with...</h2>
+    
+            
+            <div class="flex flex-wrap justify-center gap-4 mt-6">
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Web design & UI</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Social media visuals</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Infographics</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Design system</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Email design</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Stationery</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Icons</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Packaging & merch</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Signage</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Brochures</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Logos & branding</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Digital ads</span>
+                <span class="px-4 py-2 bg-[#A0FF5F] text-black font-medium rounded-lg">Wireframes</span>
+            </div>
+    
+            
+            <div class="mt-6 flex justify-center items-center">
+                <i class='bx bx-loader'></i>
+                <p class="ml-2 text-gray-300">Load More</p>
+            </div>
+        </div>
+    
+        
+        <div class="container mx-auto px-6 py-16 grid md:grid-cols-2 gap-8">
+            <div>
+                <p class="text-[#A0FF5F] text-sm font-semibold">BENEFITS</p>
+                <h2 class="text-4xl font-bold mt-2">The design subscription that connects you to your dream team</h2>
+            </div>
+            <div>
+                <p class="text-gray-400">
+                    A subscription can alleviate the stress of staffing, managing expenses, or making design calls like a Creative Director.
+                    We partner with you to ensure that your design elevates your brand to new levels.
+                </p>
+                <a href="#" class="mt-6 inline-block px-6 py-3 bg-[#A0FF5F] text-black font-semibold rounded-lg hover:bg-[#80D94F] transition">
+                    See Pricing
+                </a>
+            </div>
+        </div>
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076]  ">
+                <div class="">
+                    <img src="image/icon 1.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">1. On-demand requests</h3>
+                    <p class="text-gray-400">Put all your requests in the design queue in Trello, and we’ll knock them out 1 by 1.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076] ">
+                <div class="">
+                    <img src="image/icon 2.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">2. Top-notch quality</h3>
+                    <p class="text-gray-400">High-end work from a dedicated team of senior designers always available when you need it.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076] ">
+                <div class="">
+                    <img src="image/icon 3.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">3. Powered by - Webflow</h3>
+                    <p class="text-gray-400">We build every site on Webflow, making them dynamic, accessible, and easily scalable.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076]">
+                <div class="">
+                    <img src="image/icon 4.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">4. Fast. Responsive. Reliable.</h3>
+                    <p class="text-gray-400">Get regular updates on your projects and expect to receive designs within 2-3 days.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076]">
+                <div class="">
+                    <img src="image/icon 5.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">5. No Lock-in contracts</h3>
+                    <p class="text-gray-400">Pay the same amount every month, no surprises. Use it for as long as you want and cancel anytime.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076]">
+                <div class=""> 
+                    <img src="image/icon 6.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">6. Great value for money</h3>
+                    <p class="text-gray-400">Get a dedicated design team at a fraction of the cost of a full-time employee.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex  flex-col items-start gap-4 mb-10 border border-[#b8fd5076]">
+                <div class="">
+                    <img src="image/icon 7.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">7. Customized for you</h3>
+                    <p class="text-gray-400">We design and build custom for you. Never starting from a template unless you want that.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 border border-[#b8fd5076] mb-10">
+                <div class="">
+                    <img src="image/icon 8.svg" alt="" class="w-20 h-9">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">8. Creative paying</h3>
+                    <p class="text-gray-400">We’re here when you need us and not on payroll when you don’t.</p>
+                </div>
+            </div>
+            <div class="bg-transparent p-6 rounded-lg flex flex-col items-start gap-4 mb-10 border border-[#b8fd5076]">
+                <div class="">
+                    <img src="image/icon 9.svg" alt="" class="w-20 h-9 ">
+                </div>
+                <div>
+                    <h3 class="text-lime-400 font-bold">9. Expert turnovers</h3>
+                    <p class="text-gray-400">You're getting 10+ years of design experience with every request.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class=" mx-auto  px-6 py-24 flex flex-col items-center justify-center text-center" id="testmonials">
+        <div class="text-center pb-10">
+            <h3 class="text-sm uppercase text-gray-800">Testimonial</h3>
+            <h2 class="text-5xl font-bold mt-2">Customer is Our Top <br> Priority</h2>
+            <p class="text-gray-800 mt-2">We survey all of our clients, the results of which go directly <br> to our CEO.</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row justify-center items-center w-full max-w-6xl mx-auto">
+            <button class="p-2 bg-white shadow-md rounded-full hidden md:inline-flex">
+                <i class='bx bxs-chevron-left'></i>
+            </button>
+        
+            <div class="bg-[#e6e5e560] border border-[#6a6a6a21] rounded-2xl shadow-lg p-8 flex flex-col md:flex-row items-center gap-8 max-w-4xl mx-6 mb-10">
+                <div class="flex-1 text-center md:text-left">
+                    <div class="flex items-center gap-2 justify-center md:justify-start">
+                        <span class="text-xl font-bold">Gymstory</span>
+                    </div>
+                    <h3 class="text-2xl font-bold mt-4">
+                        Ideapeel Is The Best Digital Agency I Have Ever Seen! Highly Recommended!
+                    </h3>
+                    <p class="mt-3 text-gray-600">
+                        I recently hired <strong>Ideapeel</strong> for a custom web development project and couldn't be happier with the results. The team was able to bring my unique ideas to life and create a website that truly stands out.
+                    </p>
+                    <p class="mt-4 font-bold">Diana Loreza</p>
+                    <p class="text-gray-500 text-sm">Director of <strong>GYMSTORY</strong></p>
+                </div>
+                <img src="image/Ellipse 232.svg" alt="Customer" class="w-40 h-40 md:w-60 md:h-60 rounded-full object-cover">
+            </div>
+        
+            <button class="p-2 bg-white shadow-md rounded-full hidden md:inline-flex">
+                <i class='bx bxs-chevron-right'></i>
+            </button>
+        </div>
+    </section>
+    
+
+
+    <section class=" bg-black text-white p-5">
+        <div class="text-center my-10 ">
+            <h2 class="text-lime-400 font-bold text-sm mb-5">CLEAR & SIMPLE PRICING</h2>
+            <h1 class="text-4xl font-bold mb-5">Simple pricing to level up your brand.</h1>
+            <p class="text-gray-400">Senior experts. On-demand requests. Fast turnarounds. <br> Flat monthly fee. Cancel anytime.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <div class="bg-[#222222] p-6 rounded-lg flex flex-col text-center border border-[#b8fd5076]">
+                <h3 class="text-white font-bold text-3xl text-left">Standard <span class="bg-lime-400 ml-5 text-black px-4 py-2 text-xl rounded-lg font-normal">Most Popular</span></h3>
+                <p class="text-gray-400 my-5 text-left text-1xl">One request at a time. For companies who need on-going design support.
+                </p>
+                <hr class="text-[#b8fd504e] my-5">
+                <p class="text-lime-400 text-5xl text-left font-bold mb-2">$2,995/m</p>
+                <p class="text-gray-400 text-left text-xs">Pause or cancel anytime</p>
+                <hr class="text-[#b8fd504e] my-5">
+                <ul class="text-gray-400 text-left space-y-2 mt-4">
+                    <li><i class='bx bxs-star text-lime-400' ></i> 2 active tasks at a time</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Unlimited revisions</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Dedicated project manager</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Daily comms through Slack</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Work with senior designers</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> 2-3 days turn around time</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Top-tier design</li>
+                </ul>
+                <button class="mt-4 bg-transparent border text-white border-[#b8fd5076]  px-4 py-2 mx-5  rounded-lg hover:bg-lime-400 hover:text-black">Book A Call</button>
+                <button class="mt-4 bg-lime-400 text-black px-4 py-2 mx-5 rounded-lg hover:bg-[#90c73d] hover:text-white ">Click to buy</button>
+            </div>
+            <div class="bg-[#222222] p-6 rounded-lg flex flex-col text-center border border-[#b8fd5076]">
+                <h3 class="text-white font-bold text-3xl text-left">Growth <span class="bg-lime-400 ml-5 text-black px-4 py-2 text-xl rounded-lg font-normal">Best Value</span></h3>
+                <p class="text-gray-400 my-5 text-left text-1xl">One request at a time. For companies who need on-going design support.
+                </p>
+                <hr class="text-[#b8fd504e] my-5">
+                <p class="text-lime-400 text-5xl text-left font-bold mb-2">$4,795/m</p>
+                <p class="text-gray-400 text-left text-xs">Pause or cancel anytime</p>
+                <hr class="text-[#b8fd504e] my-5">
+                <ul class="text-gray-400 text-left space-y-2 mt-4">
+                    <li> <i class='bx bxs-star text-lime-400' ></i> <span class="text-lime-400">2x active tasks</span> at a time</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Unlimited revisions</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Dedicated project manager</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Daily comms through Slack</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Work with senior designers</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> 2-3 days turn around time</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Top-tier design</li>
+                </ul>
+                <button class="mt-4 bg-transparent border text-white border-[#b8fd5076]  px-4 py-2 mx-5  rounded-lg hover:bg-lime-400 hover:text-black">Book A Call</button>
+                <button class="mt-4 bg-lime-400 text-black px-4 py-2 mx-5 rounded-lg hover:bg-[#90c73d] hover:text-white ">Click to buy</button>
+            
+            </div>
+            <div class="bg-[#222222] p-6 rounded-lg flex flex-col text-center border border-[#b8fd5076]">
+                <h3 class="text-white font-bold text-3xl text-left">Basic - Weekly</h3>
+                <p class="text-gray-400 my-5 text-left text-1xl">One request at a time. For companies who need on-going design support.
+                </p>
+                <hr class="text-[#b8fd504e] my-5">
+                <p class="text-lime-400 text-5xl text-left font-bold mb-2">$890/m</p>
+                <p class="text-gray-400 text-left text-xs">Paid per weekly</p>
+                <hr class="text-[#b8fd504e] my-5">
+                <ul class="text-gray-400 text-left space-y-2 mt-4">
+                    <li><i class='bx bxs-star text-lime-400' ></i> Fixed Scope of work</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> 2 rounds of revisions</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Dedicated project manager</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Daily comms through Slack</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> 1x designer</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> 2-3 days turn around time</li>
+                    <li><i class='bx bxs-star text-lime-400' ></i> Top-tier design</li>
+                </ul>
+                <button class="mt-4 bg-transparent border text-white border-[#b8fd5076]  px-4 py-2 mx-5  rounded-lg hover:bg-lime-400 hover:text-black">Book A Call</button>
+                <button class="mt-4 bg-lime-400 text-black px-4 py-2 mx-5 rounded-lg hover:bg-[#90c73d] hover:text-white ">Click to buy</button>
+            
+            </div>
+        </div>
+    </section>
+
+    <section  class=" bg-black text-white p-5" id="blogs">
+        <div class="text-center mt-16 mb-10">
+            <h2 class="text-lime-400 font-bold text-sm ">BLOGS</h2>
+            <h1 class="text-3xl font-bold">News & Articles</h1>
+            <p class="text-gray-400">Best articles to get started</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 max-w-6xl mx-auto">
+            <div class="bg-[#1518069f] p-4 rounded-2xl flex flex-row border  border-[#b8fd5076]">
+                <div class="w-1/3 m-0 p-0">
+                    <img src="image/Place Image Here 1.svg" class="rounded-lg w-full">
+                </div>
+                <div class="w-2/3 flex flex-col my-2 mx-4">
+                <h3 class="text-lime-400 mb-0 text-sm">BRANDING</h3>
+                <h1 class="text-xl my-3">What is the branding, 
+                    and what we need it?</h1>
+                <p class="text-gray-400">On the other hand, we denounce with righteous indignation and…</p>
+            </div>
+            </div>
+            <div class="bg-[#1518069f] p-4 rounded-2xl flex flex-row border  border-[#b8fd5076]">
+                <div class="w-1/3 m-0 p-0">
+                    <img src="image/Place Image Here 2.svg" class="rounded-lg w-full">
+                </div>
+                <div class="w-2/3 flex flex-col my-2 mx-4">
+                <h3 class="text-lime-400 mb-0 text-sm">TIKTOK</h3>
+                <h1 class="text-xl my-3">What is the branding, 
+                    and what we need it?</h1>
+                <p class="text-gray-400">On the other hand, we denounce with righteous indignation and…</p>
+            </div>
+            </div>
+            <div class="bg-[#1518069f] p-4 rounded-2xl flex flex-row border  border-[#b8fd5076]">
+                <div class="w-1/3 m-0 p-0">
+                    <img src="image/Place Image Here 3.svg" class="rounded-lg w-full">
+                </div>
+                <div class="w-2/3 flex flex-col my-2 mx-4">
+                <h3 class="text-lime-400 mb-0 text-sm">LOGO DESIGN</h3>
+                <h1 class="text-xl my-3">What is the branding, 
+                    and what we need it?</h1>
+                <p class="text-gray-400">On the other hand, we denounce with righteous indignation and…</p>
+            </div>
+            </div>
+            <div class="bg-[#1518069f] p-4 rounded-2xl flex flex-row border  border-[#b8fd5076]">
+                <div class="w-1/3 m-0 p-0">
+                    <img src="image/Place Image Here 4.svg" class="rounded-lg w-full">
+                </div>
+                <div class="w-2/3 flex flex-col my-2 mx-4">
+                <h3 class="text-lime-400 mb-0 text-sm">FB</h3>
+                <h1 class="text-xl my-3">What is the branding, 
+                    and what we need it?</h1>
+                <p class="text-gray-400">On the other hand, we denounce with righteous indignation and…</p>
+            </div>
+            </div>
+            <div class="bg-[#1518069f] p-4 rounded-2xl flex flex-row border  border-[#b8fd5076]">
+                <div class="w-1/3 m-0 p-0">
+                    <img src="image/Place Image Here 5.svg" class="rounded-lg w-full">
+                </div>
+                <div class="w-2/3 flex flex-col my-2 mx-4">
+                <h3 class="text-lime-400 mb-0 text-sm">AI</h3>
+                <h1 class="text-xl my-3">What is the branding, 
+                    and what we need it?</h1>
+                <p class="text-gray-400">On the other hand, we denounce with righteous indignation and…</p>
+            </div>
+            </div>
+            <div class="bg-[#1518069f] p-4 rounded-2xl flex flex-row border  border-[#b8fd5076]">
+                <div class="w-1/3 m-0 p-0">
+                    <img src="image/Place Image Here 6.svg" class="rounded-lg w-full">
+                </div>
+                <div class="w-2/3 flex flex-col my-2 mx-4">
+                <h3 class="text-lime-400 mb-0 text-sm">NFT</h3>
+                <h1 class="text-xl my-3">What is the branding, 
+                    and what we need it?</h1>
+                <p class="text-gray-400">On the other hand, we denounce with righteous indignation and…</p>
+            </div>
+            </div>
+            
+        </div>
+        <div class="text-center mt-6">
+            <button class="bg-[#111204] text-[#B9FD50] border border-[#B9FD50] px-10 py-4 rounded-lg hover:bg-[#B9FD50] hover:text-black">LOAD MORE</button>
+        </div>
+    
+    </section>
+
+    <section class="bg-white" id="faq">
+        <div class="text-center mt-16 mb-10">
+            <h1 class="text-3xl font-bold">FAQ's</h1>
+            <p class="text-gray-700">Providing answers to your questions</p>
+        </div>
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-[#111204] p-4 rounded-2xl mb-4">
+                <button class="w-full text-left font-bold text-white flex justify-between py-2 px-5" onclick="toggleFAQ(1)">
+                    Do you have specific pricing plans to show? <span class="text-black rounded-full w-6 h-6 text-center bg-lime-500"><i class='bx bxs-chevron-down' ></i></span>
+                </button>
+                <p id="faq1" class="text-gray-200 hidden mt-2 py-2 px-5">Yes! We have multiple pricing options depending on your needs.</p>
+            </div>
+            <div class="bg-[#111204] p-4 rounded-2xl mb-4">
+                <button class="w-full text-left font-bold text-white flex justify-between py-2 px-5" onclick="toggleFAQ(2)">
+                    How many years of experience do you have? <span class="text-black rounded-full w-6 h-6 text-center bg-lime-500"><i class='bx bxs-chevron-down' ></i></span>
+                </button>
+                <p id="faq2" class="text-gray-200 hidden mt-2 py-2 px-5">
+                    Donec rutrum, mauris at blandit convallis, orci nulla volutpat sapien, id pulvinar  <br>leo ligula eget nunc. In quis magna magna. Nullam mattis eget.
+                    
+                </p>
+            </div>
+            <div class="bg-[#111204] p-4 rounded-2xl  mb-4">
+                <button class="w-full text-left font-bold text-white flex justify-between py-2 px-5" onclick="toggleFAQ(3)">
+                    What companies have you worked with? <span class="text-black rounded-full w-6 h-6 text-center bg-lime-500"><i class='bx bxs-chevron-down' ></i></span>
+                </button>
+                <p id="faq3" class="text-gray-200 hidden mt-2 py-2 px-5">Yes! We ensure full confidentiality and professionalism in all our projects.</p>
+            </div>
+            <div class="bg-[#111204] p-4 rounded-2xl mb-4">
+                <button class="w-full text-left font-bold text-white flex justify-between py-2 px-5" onclick="toggleFAQ(4)">
+                    Am I safe leaving my company in your hands? <span class="text-black rounded-full w-6 h-6 text-center bg-lime-500"><i class='bx bxs-chevron-down' ></i></span>
+                </button>
+                <p id="faq4" class="text-gray-200 hidden mt-2 py-2 px-5">Yes! We ensure full confidentiality and professionalism in all our projects.</p>
+            </div>
+            <textarea class="w-full p-3 rounded-2xl text-black border " placeholder="Ask us what you want to know..."></textarea>
+            <div class="grid  md:grid-cols-2 sm:grid-cols-1 gap-8  mx-20 my-10">
+                <p class="text-gray-500 text-sm text-left ">We will answer your questions via email <br> within 48 hours.
+    
+                </p>
+            
+            <button class=" bg-lime-400 text-black py-3  px-8  rounded-lg inline-block hover:bg-[#90c73d] hover:text-white  ">Send</button>
+        </div>
+        </div>
+    </section>
+    
+
+    <div class="bg-gradient-to-t from-black from-50% to-white to-50% px-6 md:px-60 py-16 md:py-32 flex justify-center">
+        <div class="flex flex-col justify-center items-center rounded-2xl bg-[#1E2008] p-6 md:p-12 w-full max-w-4xl text-center">
+            <h1 class="text-3xl md:text-5xl text-white font-extrabold mb-5">Become part of the <br> design revolution</h1>
+            <p class="text-lg md:text-xl text-gray-300 my-5">Jump on a membership and start requesting <br class="hidden md:block"> designs right away!</p>
+            <button class="my-5 bg-lime-400 text-black px-6 py-3 rounded-lg hover:bg-[#90c73d] hover:text-white transition">
+                See Pricing 
+            </button>
+        </div>
+    </div>
+    
+    
+    
+    <footer class="bg-black pt-20 pb-10 px-8">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between">
+            <div>
+                <h2 class="text-lg font-bold text-white">
+                    Kron<span class="text-lime-400">ix</span>
+                </h2>
+                <p class="text-sm text-gray-300 mt-2 max-w-xs">
+                    Kronix - the leading digital agency based in the UK, working with top-tier clients, from start-ups to enterprises.
+                </p>
+            </div>
+            <div class="mt-4 md:mt-0">
+                <ul class="flex flex-col gap-1 text-gray-300">
+                    <li class="flex items-center gap-2">
+                        <span><i class='bx bxl-gmail' ></i></span>
+                        <a href="mailto:info@ideapeel.com" class="hover:text-lime-400">Abdosamir74274@gmail.com</a>
+                    </li>
+                    <li class="flex items-center gap-2">
+                        <span><i class='bx bx-phone' ></i></span>
+                        <a href="tel:+00112313435" class="hover:text-lime-400">(020)01022580327</a>
+                    </li>
+                </ul>
+                <div class="flex items-center gap-3 mt-4 text-gray-300">
+                    <a href="#" class="hover:text-lime-400"><i class='bx bxl-facebook' ></i></i></a>
+                    <a href="#" class="hover:text-lime-400"><i class='bx bxl-instagram' ></i></a>
+                    <a href="#" class="hover:text-lime-400"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="#" class="hover:text-lime-400"><i class='bx bxl-twitter' ></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="border-gray-700 my-6">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between text-sm text-gray-400">
+            <div class="flex gap-4">
+                <a href="#" class="hover:text-[#B9FD50]">Process</a>
+                <a href="#" class="hover:text-[#B9FD50]">Benefits</a>
+                <a href="#" class="hover:text-[#B9FD50]">Services</a>
+                <a href="#" class="hover:text-[#B9FD50]">Portfolio</a>
+            </div>
+            <p class="mt-4 md:mt-0">&copy; 2025 ABDELWAHED - All Rights Reserved</p>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+</body>
+</html
